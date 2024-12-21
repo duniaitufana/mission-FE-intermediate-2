@@ -1,6 +1,6 @@
 import Styles from "./slider.module.css";
 import Star from "../../../images/icons/homepage/star.svg";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import PlayBtn from "../../../images/icons/homepage/play-btn.svg";
 import CheckBtn from "../../../images/icons/homepage/check-btn.svg";
 import OpenBtn from "../../../images/icons/homepage/hide.svg";
