@@ -1,0 +1,170 @@
+.Card {
+  position: relative;
+  transition: scale 1000ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    height 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #181a1c;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  height: fit-content;
+}
+.Card:hover {
+  scale: 1.15;
+  box-shadow: 0px 0.5px 8px white;
+  z-index: 2;
+  cursor: default;
+}
+
+.Isnew {
+  position: absolute;
+  top: 0;
+  right: 4%;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: rgb(75, 75, 173);
+  color: white;
+}
+
+.FirstDesc {
+  position: absolute;
+  width: 100%;
+  padding: 0 1rem;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 700;
+}
+
+.FirstDesc > div {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.ImgCard {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
+
+.Iframe {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  height: max-content;
+}
+img[alt="play-btn"] {
+  width: 3rem;
+  cursor: pointer;
+}
+
+img[alt="check-btn"] {
+  width: 1.8rem;
+}
+img[alt="open-btn"] {
+  width: 1rem;
+  height: 1rem;
+}
+
+.DescImg {
+  padding: 1rem 0;
+}
+
+.DescImg > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.Span {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.514);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.DescImg > div > div:nth-of-type(2) > .Span {
+  padding: 1rem;
+}
+
+.DescImg > div:nth-of-type(2) {
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.DescImg > div:nth-of-type(3) {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  color: rgb(184, 184, 184);
+}
+
+.DescImg > div:nth-of-type(3) > span {
+  text-transform: capitalize;
+  flex-basis: 8rem;
+}
+
+.DescImg > div:nth-of-type(2) > span:nth-of-type(1) {
+  padding: 0.5rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.514);
+  border-radius: 1rem;
+  font-size: 1.3rem;
+}
+
+.DescImg > div > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+}
+
+@media screen and (max-width: 450px) {
+  .Card {
+    width: 80dvw;
+    scroll-snap-align: center;
+  }
+  .Card:hover {
+    scale: 1.05;
+  }
+  .Card > img {
+    width: 19rem;
+  }
+  img[alt="play-btn"] {
+    width: 2.7rem;
+    cursor: pointer;
+  }
+
+  img[alt="check-btn"] {
+    width: 1.5rem;
+  }
+  img[alt="open-btn"] {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .DescImg > div > div:nth-of-type(2) > .Span {
+    padding: 0.8rem;
+  }
+  .DescImg > div:nth-of-type(2) {
+    gap: 1.8rem;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .DescImg > div:nth-of-type(2) > span:nth-of-type(1) {
+    padding: 0.4rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+  }
+  .DescImg > div:nth-of-type(3) {
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    flex: 0 0 5rem;
+  }
+  .DescImg > div:nth-of-type(3) > span {
+    padding: 0.3rem;
+  }
+}

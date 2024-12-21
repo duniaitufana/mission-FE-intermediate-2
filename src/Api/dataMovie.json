@@ -1,0 +1,834 @@
+[
+  {
+    "title": "my perfect stranger",
+    "rate": 8.0,
+    "isTop": false,
+    "isNew": true,
+    "imgLandscape": "/images/movies/landscape/img-1.png",
+    "imgPotrait": "/images/movies/potrait/img-1.png",
+    "genre": ["romance", "drama", "sci-fi", "mystery"],
+    "isEpisode": {
+      "episode": 16,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/I0KilEDCCCo?si=6e4LFEQ3kXjIRrgG",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "shazam! fury of the gods",
+    "rate": 5.9,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-2.png",
+    "imgPotrait": "/images/movies/potrait/img-2.png",
+    "genre": ["action", "comedy"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 10,
+    "trailer": "https://youtube.com/embed/Zi88i4CpHe4?si=5aQjYeahPQpy2_sM",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "avatar: the way of water",
+    "rate": 7.5,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-3.png",
+    "imgPotrait": "/images/movies/potrait/img-3.png",
+    "genre": ["action epic", "Adventure", "sci-fi"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/d9MyW72ELq0?si=hS00-HX0xvzqItZO",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "fast x",
+    "rate": 5.7,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-4.png",
+    "imgPotrait": "/images/movies/potrait/img-4.png",
+    "genre": ["action epic", "car action", "Adventure", "action"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/32RAq6JzY-w?si=FF_JTKcJvngUaIry",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "blue lock",
+    "rate": 8.1,
+    "isTop": false,
+    "isNew": true,
+    "imgLandscape": "/images/movies/landscape/img-5.png",
+    "imgPotrait": "/images/movies/potrait/img-5.png",
+    "genre": ["anime", "soccer", "sport"],
+    "isEpisode": {
+      "episode": 35,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/CyYpypOVSC8?si=A0AYG0K83WkzLnq4",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "the little mermaid",
+    "rate": 7.2,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-6.png",
+    "imgPotrait": "/images/movies/potrait/img-6.png",
+    "genre": ["fairy tale", "sea adventure", "Adventure", "fantasy"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/kpGo2_d3oYE?si=bJPWghZo3hoBbb1Z",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "the tomorrow war",
+    "rate": 6.6,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-7.png",
+    "imgPotrait": "/images/movies/potrait/img-7.png",
+    "genre": ["alien invansion", "action", "Adventure", "drama"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 16,
+    "trailer": "https://youtube.com/embed/2o_NCvnpQ58?si=HLMCbjwGMbw9ESJ3",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "the batman",
+    "rate": 7.8,
+    "isTop": true,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-8.png",
+    "imgPotrait": "/images/movies/potrait/img-8.png",
+    "genre": ["epic", "serial killer", "action", "action epic"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/mqqft2x_Aa4?si=TZUPDrOnCUbpIlJm",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "all of us are dead",
+    "rate": 7.5,
+    "isTop": false,
+    "isNew": true,
+    "imgLandscape": "/images/movies/landscape/img-9.png",
+    "imgPotrait": "/images/movies/potrait/img-9.png",
+    "genre": ["korean drama", "survival", "action", "horror"],
+    "isEpisode": {
+      "episode": 13,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 18,
+    "trailer": "https://youtube.com/embed/IN5TD4VRcSM?si=53YcLRygSsT1-XiA",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "a man called otto",
+    "rate": 7.5,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-10.png",
+    "imgPotrait": "/images/movies/potrait/img-10.png",
+    "genre": ["comedy", "drama"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/eFYUX9l-m5I?si=GvUIFficdPOIcaiL",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "alice in botherland",
+    "rate": 7.7,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-11.png",
+    "imgPotrait": "/images/movies/potrait/img-11.png",
+    "genre": ["psychological drama", "psychological thriller", "survival"],
+    "isEpisode": {
+      "episode": 17,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 18,
+    "trailer": "https://youtube.com/embed/49_44FFKZ1M?si=KRKcoquPlLmpqXu-",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "big hero 6",
+    "rate": 7.8,
+    "isTop": true,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-12.png",
+    "imgPotrait": "/images/movies/potrait/img-12.png",
+    "genre": ["quest", "action", "Super hero"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/d2S8D_SCAJY?si=cPF_iKFr-4b85wBl",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "missing",
+    "rate": 7.1,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-13.png",
+    "imgPotrait": "/images/movies/potrait/img-13.png",
+    "genre": ["drama", "psychological thriller", "mystery"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/seBixtcx19E?si=vBtQlEbDuafwXRjY",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "suzume no tojimari",
+    "rate": 7.6,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-14.png",
+    "imgPotrait": "/images/movies/potrait/img-14.png",
+    "genre": ["anime", "action", "Adventure"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/5pTcio2hTSw?si=thCw0NfrH3tyOJv6",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "m3gan",
+    "rate": 6.3,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-15.png",
+    "imgPotrait": "/images/movies/potrait/img-15.png",
+    "genre": ["cyber thriller", "horror", "sci-fi"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 17,
+    "trailer": "https://youtube.com/embed/BRb4U99OU80?si=RHZlUlTsLmZjGsZk",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "ant-man and the wasp: quantumania",
+    "rate": 6.3,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-16.png",
+    "imgPotrait": "/images/movies/potrait/img-16.png",
+    "genre": ["action", "Adventure", "Super hero"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 17,
+    "trailer": "https://youtube.com/embed/ZlNFpri-Y40?si=seM11G_kRW-xY8Br",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "duty after school",
+    "rate": 6.8,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-17.png",
+    "imgPotrait": "/images/movies/potrait/img-17.png",
+    "genre": ["drama", "Adventure"],
+    "isEpisode": {
+      "episode": 10,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 17,
+    "trailer": "https://youtube.com/embed/U0MOoyI7pIM?si=ZenPoVEhs0Cpsyh6",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "my hero academia",
+    "rate": 8.2,
+    "isTop": false,
+    "isNew": true,
+    "imgLandscape": "/images/movies/landscape/img-18.png",
+    "imgPotrait": "/images/movies/potrait/img-18.png",
+    "genre": ["anime", "Super hero", "action", "Adventure"],
+    "isEpisode": {
+      "episode": 167,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 16,
+    "trailer": "https://youtube.com/embed/22hBq1cvemE?si=phXac1sGApmU4h_2",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "doctor strange in the multiverse of madness",
+    "rate": 6.9,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-19.png",
+    "imgPotrait": "/images/movies/potrait/img-19.png",
+    "genre": ["Super hero", "dark fantasy", "action", "fantasy"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/aWzlQ2N6qqg?si=dKf1YAm1qDhhxy39",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "don't look up",
+    "rate": 7.2,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-20.png",
+    "imgPotrait": "/images/movies/potrait/img-20.png",
+    "genre": ["dark comedy", "saltire", "tragedy"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 18,
+    "trailer": "https://youtube.com/embed/RbIxYm3mKzI?si=cVFzEg3rbCiji4dx",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "black adam",
+    "rate": 6.2,
+    "isTop": true,
+    "isNew": true,
+    "imgLandscape": "/images/movies/landscape/img-21.png",
+    "imgPotrait": "/images/movies/potrait/img-21.png",
+    "genre": ["Adventure", "action", "Super hero"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/X0tOpBuYasI?si=R9EHdcPrHdPKbE3J",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "the devil all the time",
+    "rate": 7.1,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-22.png",
+    "imgPotrait": "/images/movies/potrait/img-22.png",
+    "genre": ["psychological thriller", "crime", "drama"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 18,
+    "trailer": "https://youtube.com/embed/EIzazUv2gtI?si=qojBBtp8_qvbSA2o",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "ted lasso",
+    "rate": 8.8,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-23.png",
+    "imgPotrait": "/images/movies/potrait/img-23.png",
+    "genre": ["soccer", "workplace drama", "comedy"],
+    "isEpisode": {
+      "episode": 35,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 21,
+    "trailer": "https://youtube.com/embed/3u7EIiohs6U?si=ayBmzvdaTrfEYWUR",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "stuart little",
+    "rate": 6.0,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-24.png",
+    "imgPotrait": "/images/movies/potrait/img-24.png",
+    "genre": ["Adventure", "family", "comedy"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 10,
+    "trailer": "https://youtube.com/embed/X7phS7CyRQk?si=mH5poO4fiS-56fh4",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "jurrasic world: dominion",
+    "rate": 5.6,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-25.png",
+    "imgPotrait": "/images/movies/potrait/img-25.png",
+    "genre": ["dinosaur adventure", "sci-fi", "Adventure"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/fb5ELWi-ekk?si=TvsY6CbkRBs1GDVY",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "baymax!",
+    "rate": 7.2,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-26.png",
+    "imgPotrait": "/images/movies/potrait/img-26.png",
+    "genre": ["computer animation", "quirky comedy", "Super hero"],
+    "isEpisode": {
+      "episode": 6,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 17,
+    "trailer": "https://youtube.com/embed/7xidOWnzSu4?si=2K45gnIFESSFg0Gb",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "dilan 1991",
+    "rate": 6.5,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-27.png",
+    "imgPotrait": "/images/movies/potrait/img-27.png",
+    "genre": ["coming-of-age", "feel-good romance", "teen drama"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/nwhB2Hb7g5c?si=69YeT7FvhxQirx5o",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "happiness",
+    "rate": 0,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-28.png",
+    "imgPotrait": "/images/movies/potrait/img-28.png",
+    "genre": ["drama", "korean drama", "romance"],
+    "isEpisode": {
+      "episode": 12,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 14,
+    "trailer": "https://youtube.com/embed/uaHq2ImPrHs?si=h-0KTW4h7JMWKZHS",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "sonic the hedgehog 2",
+    "rate": 6.5,
+    "isTop": true,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-29.png",
+    "imgPotrait": "/images/movies/potrait/img-29.png",
+    "genre": ["animal adventure", "Super hero", "supernatural fantasy"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/G5kzUpWAusI?si=Ft6xTkETjnBQR8V0",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "guardians of the galaxy vol.3",
+    "rate": 7.9,
+    "isTop": true,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-30.png",
+    "imgPotrait": "/images/movies/potrait/img-30.png",
+    "genre": ["space sci-fi", "Super hero", "Adventure"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/u3V5KDHRQvk?si=SgrIWvqTV5CbQKf6",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "spider-man: across the spider-verse",
+    "rate": 8.6,
+    "isTop": true,
+    "isNew": true,
+    "imgLandscape": "/images/movies/landscape/img-31.png",
+    "imgPotrait": "/images/movies/potrait/img-31.png",
+    "genre": ["Super hero", "computer animation", "supernatural fantasy"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 13,
+    "trailer": "https://youtube.com/embed/cqGjhVJWtEg?si=tobn7xi7M-8edHkd",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  },
+  {
+    "title": "rio",
+    "rate": 6.9,
+    "isTop": false,
+    "isNew": false,
+    "imgLandscape": "/images/movies/landscape/img-32.png",
+    "imgPotrait": "/images/movies/potrait/img-32.png",
+    "genre": ["animal adventure", "computer animation", "Adventure"],
+    "isEpisode": {
+      "episode": false,
+      "listEpisode": [
+        {
+          "duration": 0,
+          "episode": 0,
+          "desc": "",
+          "url": ""
+        }
+      ]
+    },
+    "adult": 10,
+    "trailer": "https://youtube.com/embed/P1GRO31ve5Q?si=nTe3MvIIz-mUlIel",
+    "year": 0,
+    "cast": [],
+    "creator": [],
+    "desc": ""
+  }
+]

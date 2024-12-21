@@ -1,0 +1,65 @@
+:root {
+  --bg-color: #181a1c;
+  --font-color: white;
+  --font-color-input: #c1c2c4;
+}
+
+.UlNav {
+  display: flex;
+  padding: 3rem 5rem;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.UlNav div > a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.UlNav div {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.UlNav div:nth-of-type(2) {
+  gap: 1.2rem;
+}
+
+img[alt="logo-chill"] {
+  width: 10.3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .UlNav {
+    padding: 1.5rem 2.5rem;
+    font-size: 1.6rem;
+  }
+  .UlNav div {
+    gap: 4rem;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  img[alt="logo-chill"] {
+    width: 3.3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .UlNav {
+    padding: 1.3rem 2.3rem;
+    font-size: 1.4rem;
+  }
+  .UlNav div {
+    gap: 2rem;
+  }
+
+  img[alt="Photo-profile"] {
+    width: 3rem;
+  }
+}

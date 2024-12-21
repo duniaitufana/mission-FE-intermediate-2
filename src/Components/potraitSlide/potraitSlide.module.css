@@ -1,0 +1,71 @@
+:root {
+  --bg-color: #181a1c;
+  --font-color: white;
+  --font-color-input: #c1c2c4;
+}
+
+.Slide {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: var(--bg-color);
+  padding: 0;
+  position: relative;
+}
+
+.Slide > p {
+  padding: 0.5rem 2rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.CardSlider {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 2rem;
+  transform: translateX(0px);
+  transition: transform 400ms ease,
+    width 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow-y: visible;
+  height: 35rem;
+  /* overflow-x: scroll; */
+  scroll-behavior: smooth;
+  z-index: 2;
+  align-items: center;
+}
+
+img[alt="left-btn"],
+img[alt="right-btn"] {
+  width: 4rem;
+  bottom: 35%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+img[alt="right-btn"] {
+  right: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .Slide > p {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Slide > p {
+    font-size: 1.8rem;
+  }
+  .CardSlider {
+    padding: 0 4rem;
+    overflow-x: scroll;
+  }
+  img[alt="left-btn"],
+  img[alt="right-btn"] {
+    display: none;
+  }
+}
