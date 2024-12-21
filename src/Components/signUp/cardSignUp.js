@@ -9,7 +9,7 @@ export default function CardSignUp() {
   return (
     <div className={Styles.Main}>
       <div className={Styles.Card}>
-        <img src={logo} alt="logo-chill" />
+        <img src={logo} alt="logo-chill" className={Styles.ImgLogo} />
         <h1>Daftar</h1>
         <p>Selamat datang!</p>
         <div className={Styles.DivForm}>

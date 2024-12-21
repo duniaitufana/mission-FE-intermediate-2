@@ -149,7 +149,8 @@ input::placeholder {
     font-size: 2rem;
     margin-top: 3rem;
   }
-  img[alt="logo-chill"] {
+  img[alt="logo-chill"],
+  .ImgLogo {
     width: 13.3rem;
   }
   img[alt="google-logo"] {
@@ -179,9 +180,9 @@ input::placeholder {
   img[alt="hide-password"] {
     width: 1.2rem;
   }
-  img[alt="logo-chill"] {
+  img[alt="logo-chill"],
+  .ImgLogo {
     width: 9.3rem;
-    scale: 2.5;
   }
   img[alt="google-logo"] {
     width: 1rem;
