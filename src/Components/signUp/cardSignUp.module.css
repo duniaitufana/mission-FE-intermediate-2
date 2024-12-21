@@ -18,7 +18,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   margin: 0;
   padding: 4rem 0;
 }
@@ -68,6 +68,9 @@ label {
 .DivButton {
   gap: 0;
 }
+.DivButton > a {
+  width: 100%;
+}
 .DivButton > p {
   margin: 0.5rem;
 }
@@ -79,7 +82,7 @@ img[alt="hide-password"] {
 }
 
 input,
-.DivButton button {
+.Button {
   width: 100%;
   padding: 1.4rem 2rem;
   background-color: transparent;
@@ -114,18 +117,18 @@ input::placeholder {
   align-items: center;
 }
 
-.DivButton button {
+.Button {
   color: var(--font-color);
   font-weight: 600;
   font-size: 1.6rem;
   cursor: pointer;
 }
 
-.DivButton button:hover {
+.Button:hover {
   background-color: #3d4142;
 }
 
-.DivButton button:nth-of-type(2) {
+.Button:nth-of-type(2) {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -139,7 +142,7 @@ input::placeholder {
   p,
   label,
   input::placeholder,
-  .DivButton button {
+  .Button {
     font-size: 1.2rem;
   }
   h1 {
@@ -161,7 +164,7 @@ input::placeholder {
   p,
   label,
   input::placeholder,
-  .DivButton button {
+  .Button {
     font-size: 1rem;
   }
   h1 {
@@ -169,7 +172,7 @@ input::placeholder {
     margin-top: 2rem;
   }
   input,
-  .DivButton button {
+  .Button {
     border-radius: 1.2rem;
     padding: 0.8rem 1.1rem;
   }
@@ -178,6 +181,7 @@ input::placeholder {
   }
   img[alt="logo-chill"] {
     width: 9.3rem;
+    scale: 2.5;
   }
   img[alt="google-logo"] {
     width: 1rem;

@@ -33,8 +33,10 @@ export default function CardLogin() {
           <p>Lupa kata sandi?</p>
         </div>
         <div className={Styles.DivButton}>
-          <button>Masuk</button>
-          <button>
+          <Link to="/homepage">
+            <button className={Styles.Button}>Masuk</button>
+          </Link>
+          <button className={Styles.Button}>
             <img src={googleLogo} alt="google-logo" /> Masuk dengan Google
           </button>
         </div>

@@ -35,9 +35,11 @@ export default function CardSignUp() {
           </p>
         </div>
         <div className={Styles.DivButton}>
-          <button>Masuk</button>
+          <Link>
+            <button className={Styles.Button}>Masuk</button>
+          </Link>
           <p>Atau</p>
-          <button>
+          <button className={Styles.Button}>
             <img src={googleLogo} alt="google-logo" /> Masuk dengan Google
           </button>
         </div>
