@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import PlayBtn from "../../../images/icons/homepage/play-btn.svg";
 import CheckBtn from "../../../images/icons/homepage/check-btn.svg";
 import OpenBtn from "../../../images/icons/homepage/hide.svg";
+import DialogCustom from "../../modal/modal.js";
 
 export default function Slider({
   title,
@@ -16,8 +17,12 @@ export default function Slider({
   isEpisode,
   genre,
   trailer,
+  cast,
+  desc,
+  API,
 }) {
   const [mouseIn, setMouseIn] = useState(false);
+  const openModal = useRef();
   const validation = useRef();
 
   function handleMouseEnter() {
@@ -37,7 +42,24 @@ export default function Slider({
     });
   }
 
-  const addCard_Land = function (title, rate, getIMG, isNew) {
+  function handleClick(
+    title,
+    rate,
+    getIMG,
+    isNew,
+    getIMG_second,
+    adult,
+    isEpisode,
+    genre,
+    trailer,
+    cast,
+    desc
+  ) {
+    setMouseIn(false);
+    openModal.current.showModal();
+  }
+
+  const addCard_Land = function (title, rate, getIMG, isNew, API) {
     if (mouseIn) {
       return (
         <>
@@ -109,11 +131,28 @@ export default function Slider({
     adult,
     isEpisode,
     genre,
-    trailer
+    trailer,
+    cast,
+    desc,
+    API
   ) {
     if (mouseIn) {
       return (
         <>
+          <DialogCustom
+            ref={openModal}
+            title={title}
+            rate={rate}
+            getIMG={getIMG}
+            getIMG_second={getIMG_second}
+            adult={adult}
+            isEpisode={isEpisode}
+            genre={genre}
+            trailer={trailer}
+            cast={cast}
+            desc={desc}
+            API={API}
+          />
           <iframe
             id="iframe"
             src={`${trailer}?enablejsapi=1&autoplay=1&controls=1`}
@@ -126,24 +165,15 @@ export default function Slider({
           ></iframe>
 
           {isNew ? <p className={Styles.Isnew}>New</p> : null}
-          {rate && title ? (
-            <div className={Styles.FirstDesc}>
-              <p>{title}</p>
-              <div>
-                <img src={Star} alt="star-rate" />
-                <span>{`${rate}/10`}</span>
-              </div>
-            </div>
-          ) : null}
           <div className={Styles.DescImg}>
             <div>
               <div>
-                <img src={PlayBtn} alt="play-btn" />
+                <img src={PlayBtn} alt="play-btn" onClick={handleClick} />
                 <span className={Styles.Span}>
                   <img src={CheckBtn} alt="check-btn" />
                 </span>
               </div>
-              <div>
+              <div onClick={handleClick}>
                 <span className={Styles.Span}>
                   <img src={OpenBtn} alt="open-btn" />
                 </span>
@@ -151,7 +181,9 @@ export default function Slider({
             </div>
             <div>
               <span>{adult}+</span>
-              <span>{isEpisode ? `Episode ${isEpisode}` : "Movie"}</span>
+              <span>
+                {isEpisode.episode ? `Episode ${isEpisode.episode}` : "Movie"}
+              </span>
             </div>
             <div>
               {genre ? (
@@ -168,17 +200,22 @@ export default function Slider({
     } else {
       return (
         <>
+          <DialogCustom
+            ref={openModal}
+            title={title}
+            rate={rate}
+            getIMG={getIMG}
+            getIMG_second={getIMG_second}
+            adult={adult}
+            isEpisode={isEpisode}
+            genre={genre}
+            trailer={trailer}
+            cast={cast}
+            desc={desc}
+            API={API}
+          />
           <img src={`..${getIMG}`} alt={title} className={Styles.ImgCard} />
           {isNew ? <p className={Styles.Isnew}>New</p> : null}
-          {rate && title ? (
-            <div className={Styles.FirstDesc}>
-              <p>{title}</p>
-              <div>
-                <img src={Star} alt="star-rate" />
-                <span>{`${rate}/10`}</span>
-              </div>
-            </div>
-          ) : null}
         </>
       );
     }
@@ -192,7 +229,7 @@ export default function Slider({
       onMouseLeave={handleMouseLeave}
     >
       {isLandscape
-        ? addCard_Land(title, rate, getIMG, isNew, trailer)
+        ? addCard_Land(title, rate, getIMG, isNew, trailer, cast, desc, API)
         : addCard(
             title,
             rate,
@@ -202,7 +239,10 @@ export default function Slider({
             adult,
             isEpisode,
             genre,
-            trailer
+            trailer,
+            cast,
+            desc,
+            API
           )}
     </div>
   );

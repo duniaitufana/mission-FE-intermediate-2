@@ -8,7 +8,10 @@ export default function HomePage() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <Header
+        name="duty after school"
+        link="../../images/background/homepage/bg.webp"
+      />
       <LandscapeSlide />
       <PotraitSlide header="Top Rating Film dan Series Hari ini" apiId="top" />
       <PotraitSlide header="Film Trending" />

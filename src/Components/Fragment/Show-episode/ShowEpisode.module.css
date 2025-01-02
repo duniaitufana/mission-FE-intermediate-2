@@ -1,0 +1,71 @@
+.ShowEpisodes {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  color: white;
+  padding: 2rem 3rem;
+  transition: background-color 200ms ease-in;
+}
+
+.ShowEpisodes:hover {
+  background-color: rgba(255, 255, 255, 0.158);
+}
+
+.ShowEpisodes:focus {
+  background-color: rgba(255, 255, 255, 0.158);
+  outline: none;
+}
+
+.ShowEpisodes > img {
+  width: 30%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.Desc {
+  height: fit-content;
+}
+
+.Desc > div {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.Desc > div > span:nth-of-type(1) {
+  cursor: pointer;
+}
+
+.Desc > div > span:nth-of-type(2) {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.712);
+}
+
+.Desc > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+@media screen and (max-width: 670px) {
+  .Desc > p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ShowEpisodes {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .ShowEpisodes > img {
+    width: 90%;
+  }
+}

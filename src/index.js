@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CardLogin from "./Pages/login/cardLogin.js";
 import CardSignUp from "./Pages/signUp/cardSignUp.js";
 import HomePage from "./Pages/homepage/homepage.js";
+import Series from "./Pages/series/series.js";
+import Film from "./Pages/film/film.js";
 
 let router = createBrowserRouter([
   {
@@ -26,6 +28,16 @@ let router = createBrowserRouter([
   {
     path: "/homepage",
     element: <HomePage />,
+    errorElement: <h1>NotFound Page 404</h1>,
+  },
+  {
+    path: "/pages/series",
+    element: <Series />,
+    errorElement: <h1>NotFound Page 404</h1>,
+  },
+  {
+    path: "/pages/film",
+    element: <Film />,
     errorElement: <h1>NotFound Page 404</h1>,
   },
 ]);

@@ -32,10 +32,10 @@ export default function Navbar() {
               )}
             </li>
           </Link>
-          <Link to="">
+          <Link to="/pages/series">
             <li>Series</li>
           </Link>
-          <Link to="">
+          <Link to="/pages/film">
             <li>Film</li>
           </Link>
           <Link to="">

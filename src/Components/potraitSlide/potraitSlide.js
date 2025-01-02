@@ -17,19 +17,35 @@ export default function PotraitSlide({ header, apiId }) {
       filteredAPI.sort((a, b) => a.rate - b.rate);
       return filteredAPI.map(
         (
-          { imgPotrait, isEpisode, imgLandscape, adult, genre, trailer },
+          {
+            title,
+            rate,
+            imgPotrait,
+            isEpisode,
+            imgLandscape,
+            adult,
+            genre,
+            trailer,
+            cast,
+            desc,
+          },
           index
         ) => {
           if (isEpisode.episode) {
             return (
               <Slider
                 key={index}
+                title={title}
+                rate={rate}
                 getIMG={imgPotrait}
                 getIMG_second={imgLandscape}
                 adult={adult}
-                isEpisode={isEpisode.episode}
+                isEpisode={isEpisode}
                 genre={genre}
                 trailer={trailer}
+                cast={cast}
+                desc={desc}
+                API={API}
               />
             );
           } else {
@@ -40,20 +56,37 @@ export default function PotraitSlide({ header, apiId }) {
     } else if (apiId === "new") {
       return (filteredAPI = API.map(
         (
-          { imgPotrait, isNew, imgLandscape, adult, isEpisode, genre, trailer },
+          {
+            title,
+            rate,
+            imgPotrait,
+            isNew,
+            imgLandscape,
+            adult,
+            isEpisode,
+            genre,
+            trailer,
+            cast,
+            desc,
+          },
           index
         ) => {
           if (isNew) {
             return (
               <Slider
                 key={index}
+                title={title}
+                rate={rate}
                 getIMG={imgPotrait}
                 isNew={isNew}
                 getIMG_second={imgLandscape}
                 adult={adult}
-                isEpisode={isEpisode.episode}
+                isEpisode={isEpisode}
                 genre={genre}
                 trailer={trailer}
+                cast={cast}
+                desc={desc}
+                API={API}
               />
             );
           }
@@ -62,19 +95,35 @@ export default function PotraitSlide({ header, apiId }) {
     } else {
       return API.map(
         (
-          { imgPotrait, imgLandscape, adult, isEpisode, genre, trailer },
+          {
+            title,
+            rate,
+            imgPotrait,
+            imgLandscape,
+            adult,
+            isEpisode,
+            genre,
+            trailer,
+            cast,
+            desc,
+          },
           index
         ) => {
           if (!isEpisode.episode) {
             return (
               <Slider
                 key={index}
+                title={title}
+                rate={rate}
                 getIMG={imgPotrait}
                 getIMG_second={imgLandscape}
                 adult={adult}
-                isEpisode={isEpisode.episode}
+                isEpisode={isEpisode}
                 genre={genre}
                 trailer={trailer}
+                cast={cast}
+                desc={desc}
+                API={API}
               />
             );
           }
@@ -84,7 +133,6 @@ export default function PotraitSlide({ header, apiId }) {
   };
 
   window.addEventListener("resize", () => {
-    console.log("resize");
     WIDTH_SLIDER.current.style.transform = "translateX(0px)";
   });
 
