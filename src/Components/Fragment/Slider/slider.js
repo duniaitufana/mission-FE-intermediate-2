@@ -3,8 +3,11 @@ import Star from "../../../images/icons/homepage/star.svg";
 import { useState, useRef } from "react";
 import PlayBtn from "../../../images/icons/homepage/play-btn.svg";
 import CheckBtn from "../../../images/icons/homepage/check-btn.svg";
+import CheckBtn2 from "../../../images/icons/homepage/check-btn-1.svg";
 import OpenBtn from "../../../images/icons/homepage/hide.svg";
 import DialogCustom from "../../modal/modal.js";
+import { useSelector, useDispatch } from "react-redux";
+import ActionType from "../../redux/ActionsType.js";
 
 export default function Slider({
   title,
@@ -24,19 +27,27 @@ export default function Slider({
   const [mouseIn, setMouseIn] = useState(false);
   const openModal = useRef();
   const validation = useRef();
+  const STATE = useSelector((state) => state);
+  const dispatch = useDispatch();
+
+  let createDebounce;
 
   function handleMouseEnter() {
-    const rect = validation.current.getBoundingClientRect();
-    const left = window.innerWidth - rect.left;
-    const right = window.innerWidth - rect.right;
-    if (left + 20 < window.innerWidth && right > 50) {
-      setMouseIn((data) => {
-        return (data = true);
-      });
-    }
+    clearTimeout(createDebounce);
+    createDebounce = setTimeout(() => {
+      const rect = validation.current.getBoundingClientRect();
+      const left = window.innerWidth - rect.left;
+      const right = window.innerWidth - rect.right;
+      if (left + 20 < window.innerWidth && right > 50) {
+        setMouseIn((data) => {
+          return (data = true);
+        });
+      }
+    }, 500);
   }
 
   function handleMouseLeave() {
+    clearTimeout(createDebounce);
     setMouseIn((data) => {
       return (data = false);
     });
@@ -169,8 +180,26 @@ export default function Slider({
             <div>
               <div>
                 <img src={PlayBtn} alt="play-btn" onClick={handleClick} />
-                <span className={Styles.Span}>
-                  <img src={CheckBtn} alt="check-btn" />
+                <span
+                  className={
+                    STATE.includes(title) ? Styles.SpanAdd : Styles.Span
+                  }
+                  onClick={() => {
+                    if (STATE.includes(title)) {
+                      window.alert('Film telah ditambahkan ke Dafton "tonton"');
+                      return;
+                    } else {
+                      dispatch({
+                        type: ActionType.ADD_MOVIE,
+                        payload: { movie: title },
+                      });
+                    }
+                  }}
+                >
+                  <img
+                    src={STATE.includes(title) ? CheckBtn2 : CheckBtn}
+                    alt="check-btn"
+                  />
                 </span>
               </div>
               <div onClick={handleClick}>

@@ -3,30 +3,66 @@ import Slider from "../Fragment/Slider/slider";
 import API from "../../Api/dataMovie.json";
 import LeftBtn from "../../images/icons/homepage/left-btn.svg";
 import RightBtn from "../../images/icons/homepage/right-btn.svg";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 
 export default function LandscapeSlide() {
   const [isDisable, setDisable] = useState(false);
   const WIDTH_SLIDER = useRef();
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isOverflow, setIsOverflow] = useState(false);
+  const STATE = useSelector((state) => state);
+
+  useEffect(() => {
+    const getOverflow = WIDTH_SLIDER.current;
+    function check() {
+      if (getOverflow) {
+        const hasOverflow = getOverflow.scrollWidth > getOverflow.clientWidth;
+        setIsOverflow(hasOverflow);
+      } else {
+        setIsOverflow(false);
+      }
+    }
+    check();
+    window.addEventListener("resize", check);
+
+    const resizeObserver = new MutationObserver(() => {
+      check();
+    });
+
+    resizeObserver.observe(getOverflow, {
+      childList: true,
+      subtree: true,
+    });
+
+    return () => {
+      window.removeEventListener("resize", check);
+      resizeObserver.unobserve(getOverflow);
+    };
+  }, []);
 
   function getAPI() {
-    return API.map(
-      ({ title, rate, imgLandscape, adult, isEpisode, genre }, index) => {
-        return (
-          <Slider
-            key={index}
-            title={title}
-            rate={rate}
-            getIMG={imgLandscape}
-            isLandscape={true}
-            adult={adult}
-            isEpisode={isEpisode.episode}
-            genre={genre}
-          />
-        );
-      }
-    );
+    const NewApi = API.filter((x) => STATE.includes(x.title));
+    if (NewApi.length === 0) {
+      return <p>Tidak ada daftar film yang anda tambahkan</p>;
+    } else {
+      return NewApi.map(
+        ({ title, rate, imgLandscape, adult, isEpisode, genre }, index) => {
+          return (
+            <Slider
+              key={index}
+              title={title}
+              rate={rate}
+              getIMG={imgLandscape}
+              isLandscape={true}
+              adult={adult}
+              isEpisode={isEpisode.episode}
+              genre={genre}
+            />
+          );
+        }
+      );
+    }
   }
 
   function handleClick(where) {
@@ -45,9 +81,10 @@ export default function LandscapeSlide() {
           .split(",")[4]
       );
       const rect =
-        WIDTH_SLIDER.current.childNodes[API.length - 1].getBoundingClientRect();
+        WIDTH_SLIDER.current.childNodes[
+          STATE.length - 1
+        ].getBoundingClientRect();
       const distanceFromLeft = window.innerWidth - rect.right;
-      console.log(isDisable, isAnimating);
       if (curTransform === "none" || !curTransform) {
         WIDTH_SLIDER.current.style.transform = `translateX(-${
           widthSlider + getGap
@@ -84,27 +121,36 @@ export default function LandscapeSlide() {
   return (
     <div className={Styles.Slide}>
       <p>Melanjutkan tonton film</p>
-      <div className={Styles.CardSlider} ref={WIDTH_SLIDER}>
+      <div
+        className={
+          STATE.length === 0 ? Styles.CardSliderNull : Styles.CardSlider
+        }
+        ref={WIDTH_SLIDER}
+      >
         {getAPI()}
       </div>
-      <img
-        src={LeftBtn}
-        alt="left-btn"
-        onClick={() => {
-          if (!isDisable) {
-            handleClick("left");
-          }
-        }}
-      />
-      <img
-        src={RightBtn}
-        alt="right-btn"
-        onClick={() => {
-          if (!isDisable) {
-            handleClick("right");
-          }
-        }}
-      />
+      {!isOverflow ? null : (
+        <>
+          <img
+            src={LeftBtn}
+            alt="left-btn"
+            onClick={() => {
+              if (!isDisable) {
+                handleClick("left");
+              }
+            }}
+          />
+          <img
+            src={RightBtn}
+            alt="right-btn"
+            onClick={() => {
+              if (!isDisable) {
+                handleClick("right");
+              }
+            }}
+          />
+        </>
+      )}
     </div>
   );
 }

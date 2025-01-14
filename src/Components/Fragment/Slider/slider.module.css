@@ -83,6 +83,15 @@ img[alt="open-btn"] {
   border-radius: 50%;
   cursor: pointer;
 }
+.SpanAdd {
+  background-color: white;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.514);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 .DescImg > div > div:nth-of-type(2) > .Span {
   padding: 1rem;

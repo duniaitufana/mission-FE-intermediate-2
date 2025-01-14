@@ -4,6 +4,7 @@
   padding: 0;
   background-color: #181a1c;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .Dialog::backdrop {
   background-color: #181a1c79;

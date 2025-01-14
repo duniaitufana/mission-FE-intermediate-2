@@ -4,12 +4,25 @@ import API from "../../Api/dataMovie.json";
 import LeftBtn from "../../images/icons/homepage/left-btn.svg";
 import RightBtn from "../../images/icons/homepage/right-btn.svg";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export default function PotraitSlide({ header, apiId }) {
   const [isDisable, setDisable] = useState(false);
   const WIDTH_SLIDER = useRef();
   const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (WIDTH_SLIDER.current) {
+        WIDTH_SLIDER.current.style.transform = "translateX(0px)";
+      }
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const add = function getAPI() {
     let filteredAPI = API;
@@ -131,10 +144,6 @@ export default function PotraitSlide({ header, apiId }) {
       );
     }
   };
-
-  window.addEventListener("resize", () => {
-    WIDTH_SLIDER.current.style.transform = "translateX(0px)";
-  });
 
   function handleClick(where) {
     console.log(isAnimating, isDisable);

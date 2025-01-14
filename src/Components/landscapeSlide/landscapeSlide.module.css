@@ -14,7 +14,7 @@
   padding: 2rem 0;
   position: relative;
   overflow-y: visible;
-  min-height: fit-content;
+  height: 40rem;
 }
 
 .Slide > p {
@@ -36,6 +36,12 @@
   z-index: 2;
   align-items: center;
 }
+.CardSliderNull {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
 
 img[alt="left-btn"],
 img[alt="right-btn"] {
@@ -51,7 +57,7 @@ img[alt="right-btn"] {
 
 @media screen and (max-width: 750px) {
   .CardSlider {
-    overflow-x: scroll;
+    overflow: scroll visible;
   }
 }
 
