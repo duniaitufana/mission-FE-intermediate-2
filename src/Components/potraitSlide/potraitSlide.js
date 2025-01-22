@@ -1,12 +1,12 @@
 import Styles from "./potraitSlide.module.css";
 import Slider from "../Fragment/Slider/slider";
-import API from "../../Api/dataMovie.json";
 import LeftBtn from "../../images/icons/homepage/left-btn.svg";
 import RightBtn from "../../images/icons/homepage/right-btn.svg";
 
 import { useRef, useState, useEffect } from "react";
+import axios from "axios";
 
-export default function PotraitSlide({ header, apiId }) {
+export default function PotraitSlide({ header, apiId, API }) {
   const [isDisable, setDisable] = useState(false);
   const WIDTH_SLIDER = useRef();
   const [isAnimating, setIsAnimating] = useState(false);

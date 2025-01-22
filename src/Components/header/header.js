@@ -3,14 +3,14 @@ import VolumeOff from "../../images/icons/homepage/volume-off.svg";
 import InfoOutline from "../../images/icons/homepage/information-outline.svg";
 import { useRef } from "react";
 import Modal from "../modal/modal.js";
-import API from "../../Api/dataMovie.json";
 
-export default function Header({ name, link }) {
+export default function Header({ name, link, API }) {
   const openModal = useRef();
 
-  const getAPI = API.find(({ title }) => {
-    return title === name;
-  });
+  const getAPI =
+    API.find(({ title }) => {
+      return title === name;
+    }) || {};
 
   const { title, isEpisode, genre, desc, cast, imgLandscape } = getAPI;
 

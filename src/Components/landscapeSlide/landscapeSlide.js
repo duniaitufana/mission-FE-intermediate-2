@@ -1,12 +1,11 @@
 import Styles from "./landscapeSlide.module.css";
 import Slider from "../Fragment/Slider/slider";
-import API from "../../Api/dataMovie.json";
 import LeftBtn from "../../images/icons/homepage/left-btn.svg";
 import RightBtn from "../../images/icons/homepage/right-btn.svg";
 import { useRef, useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 
-export default function LandscapeSlide() {
+export default function LandscapeSlide({ API }) {
   const [isDisable, setDisable] = useState(false);
   const WIDTH_SLIDER = useRef();
   const [isAnimating, setIsAnimating] = useState(false);
@@ -41,7 +40,7 @@ export default function LandscapeSlide() {
     };
   }, []);
 
-  function getAPI() {
+  function getAPI(API) {
     const NewApi = API.filter((x) => STATE.includes(x.title));
     if (NewApi.length === 0) {
       return <p>Tidak ada daftar film yang anda tambahkan</p>;
@@ -127,7 +126,7 @@ export default function LandscapeSlide() {
         }
         ref={WIDTH_SLIDER}
       >
-        {getAPI()}
+        {getAPI(API)}
       </div>
       {!isOverflow ? null : (
         <>
